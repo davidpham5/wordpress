@@ -12,9 +12,7 @@ function import_enqueue_styles() {
 }
 add_action( 'wp_enqueue_scripts', 'import_enqueue_styles' );
 
-function import_font_awesome_styles() {
-    wp_enqueue_style( '/components/css/font-awesome.css', get_stylesheet_uri() );
-
+function enqueue_our_required_stylesheets(){
+	wp_enqueue_style('font-awesome', get_stylesheet_directory_uri() . '/components/font-awesome/css/font-awesome.css');
 }
-add_action( 'wp_enqueue_scripts', 'import_font_awesome_styles' );
-?>
+add_action('wp_enqueue_scripts','enqueue_our_required_stylesheets');

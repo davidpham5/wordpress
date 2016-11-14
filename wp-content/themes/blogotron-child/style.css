@@ -12,9 +12,43 @@
  Text Domain:
 */
 
+body {
+	font-family: 'Lato', sans-serif;
+}
 
 #main-header .site-title {
 	display: flex;
     flex-direction: row;
     justify-content: center;
  }
+
+#content {
+ 	width: 100%;
+}
+
+#content .post-title {
+	font-family: 'Gentium Basic', serif;
+    font-size: 4.0rem;
+    line-height: 4.8rem;
+    font-weight: 400;
+    text-align: left;
+    margin: 0 0 2.4rem 0;
+    padding: 0;
+    clear: both;
+}
+ #nav-wrapper {
+ 	background: #fff;
+ 	border-color: transparent;
+ }
+
+ .nav-dp a {
+	text-transform: uppercase;
+ }
+#main-nav .main-menu > ul > li.current_page_item,
+#main-nav .main-menu > ul > .current_page_item > a {
+ 	background: transparent;
+ }
+
+#main-nav .main-menu > ul > .current_page_item > a {
+	color: #333;
+}
